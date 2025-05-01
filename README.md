@@ -1,7 +1,5 @@
 # leetcode-python
 
-# 🧠 LeetCode Practice – Priyabrat Mishra
-
 As a **Machine Learning Engineer**, I'm using LeetCode to sharpen my **Python skills** and strengthen my grasp of **data structures and algorithms**.
 
 ### 🎯 Current Goal
