@@ -1,13 +1,30 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        output_indices = {}
+        for index,number in enumerate(nums):
+            difference = target - number
+            if difference in output_indices:
+                #return [output_indices[difference], index]
+                return [index, output_indices[difference]]
+            output_indices[number] = index
+        """
+        output = {}
+        for i in range(len(nums)):
+            desirable = target - nums[i]
+            if desirable in output:
+                return [i, output[desirable]]
+            output[nums[i]] = i
+        return []
+
         output_indices = []
         for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
+            for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] == target:
-                    return [i,j]
-                    #output_indices [int(i),int(j)]
+                    return [i, j]
+                    # output_indices [int(i),int(j)]
                     break
-        #return output_indices
+                    """
+        # return output_indices
         """for index,number in enumerate(nums):
             first_index = index
             first_number = number
@@ -28,10 +45,11 @@ class Solution:
                                 print(f"Second index is : {second_index} and second number is : {second_number}")
                                 """
 
-        #print(output_indexes)
-            #print(f"The index is {index} and number is {number} and the desired target is {desired_target}")
+        # print(output_indexes)
+        # print(f"The index is {index} and number is {number} and the desired target is {desired_target}")
 
-#"""
+
+# """
 
 # LOGIC of the program
 """
@@ -43,4 +61,3 @@ A. Brute Force Method
    2. Search 2nd element desired in list and if found then return
 
 """
-
