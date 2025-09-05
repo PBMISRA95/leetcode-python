@@ -7,7 +7,7 @@ class Solution:
         t_sum = sum(ord(char) for char in t)
 
         return chr(t_sum - s_sum)
-        
+
         """
         My INTITAL LOGIC
         for char in s:
@@ -24,17 +24,18 @@ class Solution:
         return chr(t_sum-s_sum)
 """
 
+
 """
 Problem statement -  2 input strings.
  t builds on top of s with extra character. Write which character is added.
 
-Problem pattern - 
+Problem pattern -
 
- Logic - 
- 1.Brute Force - Sort both the strings. Then compare them character wise!  
+ Logic -
+ 1.Brute Force - Sort both the strings. Then compare them character wise!
  2. Count the frequency of each character in each of the string and store it in a respective dictionaries. Them compare each of the
  dictionaries and whichever character is extra then that is the extra character added in t.
  3. Sum all the character values of t and s. Now subtract t - s = extra remaning character.
 
 
- """       
+ """
