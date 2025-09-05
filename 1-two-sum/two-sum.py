@@ -1,3 +1,4 @@
+# Initial working solution for this problem - Brute Force Method
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         output = {}

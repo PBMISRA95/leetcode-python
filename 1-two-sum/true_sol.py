@@ -1,3 +1,4 @@
+# Optimal solution for this problem - Hashing Method
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         output_indices = {}
